@@ -8,6 +8,7 @@
 | [Linked List](./LinkedList) | 单链表 |
 | [Queue](./Queue) | 队列 |
 | [Stack](./Stack) | 栈 |
+| [Max Heap](./Heap/MaxHeap) | 最大堆 |
 
 | Algorithm | Description |
 | ---- | ---- |
