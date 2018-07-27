@@ -116,5 +116,6 @@ void max_heap_insert(int* arr, int* n, int capacity, int key)
     }
 
     (*n)++;
-    heap_increase_key(arr, (*n)-1, key);
+    arr[*n-1] = key;
+    heap_increase_key(arr, *n-1, key);
 }
