@@ -9,6 +9,7 @@
 | [Queue](./Queue) | 队列 |
 | [Stack](./Stack) | 栈 |
 | [Max Heap](./Heap/MaxHeap) | 最大堆 |
+| [Graph](./Graph/AdjacencyList) | 图 |
 
 | Algorithm | Description |
 | ---- | ---- |
