@@ -4,7 +4,7 @@
 
 | Data Structure                           | Description |
 | ---------------------------------------- | ----------- |
-| [Binary Search Tree](./BinarySearchTree) | 二叉搜索树       |
+| [Binary Search Tree](./Tree/BinarySearchTree) | 二叉搜索树       |
 | [Trie](./Tree/Trie)                      | Trie        |
 | [Linked List](./LinkedList)              | 单链表         |
 | [Queue](./Queue)                         | 队列          |
