@@ -28,3 +28,7 @@
 | [BFS Graph](./cpp/Traversal/Graph)         | 广度优先遍历图     |
 
 ## Implemented in Python
+
+| Algorithm                              | Description |
+| -------------------------------------- | ----------- |
+| [Multiple Dictionaries](./python/Hashing/multidict.py) | 字典分割 |
