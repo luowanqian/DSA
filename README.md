@@ -29,6 +29,10 @@
 
 ## Implemented in Python
 
+| Data Strucutre | Description |
+| ---- | ---- |
+| [LinkedQueue](./python/dsa/queue/linked_queue.py) | 基于链表实现的队列 |
+
 | Algorithm                              | Description |
 | -------------------------------------- | ----------- |
-| [Multiple Dictionaries](./python/Hashing/multidict.py) | 字典分割 |
+| [Multiple Dictionaries](./python/dsa/hashing/multidict.py) | 字典分割 |
