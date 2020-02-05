@@ -9,13 +9,13 @@
 
 | Data Structure                           | Description |
 | ---------------------------------------- | ----------- |
-| [Binary Search Tree](./cpp/Tree/BinarySearchTree) | 二叉搜索树       |
-| [Trie](./cpp/Tree/Trie)                      | Trie        |
-| [Linked List](./cpp/LinkedList)              | 单链表         |
-| [Queue](./cpp/Queue)                         | 队列          |
-| [Stack](./cpp/Stack)                         | 栈           |
-| [Max Heap](./cpp/Heap/MaxHeap)               | 最大堆         |
-| [Graph](./cpp/Graph/AdjacencyList)           | 图           |
+| [Binary Search Tree](./cpp/Tree/BinarySearchTree/bst.c) | 二叉搜索树       |
+| [Trie](./cpp/Tree/Trie/trie.c)                      | Trie        |
+| [Linked List](./cpp/LinkedList/list.c)              | 单链表         |
+| [Queue](./cpp/Queue/queue.c)                         | 队列          |
+| [Stack](./cpp/Stack/stack.c)                         | 栈           |
+| [Max Heap](./cpp/Heap/MaxHeap/heap.c)               | 最大堆         |
+| [Graph](./cpp/Graph/AdjacencyList/graph.c)           | 图（邻接表）           |
 
 | Algorithm                              | Description |
 | -------------------------------------- | ----------- |
@@ -26,6 +26,10 @@
 | [Selection Sort](./cpp/Sort/SelectionSort) | 选择排序        |
 | [KMP](./cpp/String/KMP)                    | KMP字符串查找    |
 | [BFS Graph](./cpp/Traversal/Graph)         | 广度优先遍历图     |
+
+| Tools | Description |
+| ---- | ---- |
+| [Binary Search Tree Visualization](./cpp/Tree/BinarySearchTree/bst_viz.c) | 使用Graphviz可视化BST |
 
 ## Implemented in Python
 
