@@ -5,7 +5,11 @@
 extern "C" {
 #endif
 
-struct TreeNode;
+struct TreeNode {
+    int data;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
 
 struct TreeNode* create_empty_tree();
 void destroy_tree(struct TreeNode **tree);
