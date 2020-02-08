@@ -35,8 +35,13 @@
 
 | Data Strucutre | Description |
 | ---- | ---- |
-| [LinkedQueue](./python/dsa/queue/linked_queue.py) | 基于链表实现的队列 |
+| [Linked Queue](./python/dsa/queue/linked_queue.py) | 基于链表实现的队列 |
+| [Binary Search Tree](./python/dsa/binary_tree/bst.py) | 二叉搜索树 |
 
 | Algorithm                              | Description |
 | -------------------------------------- | ----------- |
 | [Multiple Dictionaries](./python/dsa/hashing/multidict.py) | 字典分割 |
+
+| Tools | Description |
+| ---- | ---- |
+| [Binary Search Tree Visualization](./python/dsa/binary_tree/bst.py) | 使用Graphviz可视化BST |
