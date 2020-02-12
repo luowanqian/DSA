@@ -1,4 +1,5 @@
-from typing import Optional
+"""A simple binary search tree implementation.
+"""
 
 
 class Node:
@@ -47,27 +48,30 @@ class BinarySearchTree:
     def __init__(self):
         self._root = None
 
-    def size(self, x: Optional[Node] = Node):
+    def _size(self, x):
         if x is None:
             return 0
         else:
             return x.num_nodes
 
-    def find_subtree(self, x: Node, key):
+    def size(self):
+        return self._size(self._root)
+
+    def _find_subtree(self, x: Node, key):
         if x is None:
             return None
 
         if key < x.key:
-            return self.find_subtree(x.left, key)
+            return self._find_subtree(x.left, key)
         elif key > x.key:
-            return self.find_subtree(x.right, key)
+            return self._find_subtree(x.right, key)
         else:
             return x.val
 
     def find(self, key):
-        return self.find_subtree(self._root, key)
+        return self._find_subtree(self._root, key)
 
-    def insert_subtree(self, x: Node, key, val):
+    def _insert_subtree(self, x: Node, key, val):
         """Insert `val` in subtree rooted at `x`.
 
         Change `key`'s value to `val` if `key` in subtree rooted at `x`.
@@ -91,18 +95,18 @@ class BinarySearchTree:
             return Node(key, val, 1)
 
         if key < x.key:
-            x.left = self.insert_subtree(x.left, key, val)
+            x.left = self._insert_subtree(x.left, key, val)
         elif key > x.key:
-            x.right = self.insert_subtree(x.right, key, val)
+            x.right = self._insert_subtree(x.right, key, val)
         else:
             x.val = val
 
-        x.num_nodes = self.size(x.left) + self.size(x.right) + 1
+        x.num_nodes = self._size(x.left) + self._size(x.right) + 1
 
         return x
 
     def insert(self, key, val):
-        self._root = self.insert_subtree(self._root, key, val)
+        self._root = self._insert_subtree(self._root, key, val)
 
     def _print_preorder(self, x: Node):
         if x is not None:
@@ -178,4 +182,9 @@ if __name__ == "__main__":
     tree.insert(2, "C")
     tree.insert(4, "H")
 
+    val = tree.find(5)
+    print(f"Found node with key = 5: {str(val)}")
+
+    print(f"Number of nodes: {str(len(tree))}")
+    print("Pre-order traversal: ")
     tree.print_preorder()
