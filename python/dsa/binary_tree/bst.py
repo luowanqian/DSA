@@ -19,6 +19,10 @@ class Node:
     def val(self):
         return self._val
 
+    @val.setter
+    def val(self, value):
+        self._val = value
+
     @property
     def left(self):
         return self._left
@@ -72,7 +76,7 @@ class BinarySearchTree:
         return self._find_subtree(self._root, key)
 
     def _insert_subtree(self, x: Node, key, val):
-        """Insert `val` in subtree rooted at `x`.
+        """Insert `key` in subtree rooted at `x`.
 
         Change `key`'s value to `val` if `key` in subtree rooted at `x`.
         Otherwise, add new node to subtree associating `key` with `val`.
@@ -175,15 +179,22 @@ class BinarySearchTreeViz:
 
 if __name__ == "__main__":
     tree = BinarySearchTree()
-    tree.insert(3, "S")
-    tree.insert(1, "E")
-    tree.insert(5, "A")
-    tree.insert(0, "R")
-    tree.insert(2, "C")
-    tree.insert(4, "H")
+    tree.insert("S", 0)
+    tree.insert("E", 1)
+    tree.insert("A", 2)
+    tree.insert("R", 3)
+    tree.insert("C", 4)
+    tree.insert("H", 5)
+    tree.insert("E", 6)
+    tree.insert("X", 7)
+    tree.insert("A", 8)
+    tree.insert("M", 9)
+    tree.insert("P", 10)
+    tree.insert("L", 11)
+    tree.insert("E", 12)
 
-    val = tree.find(5)
-    print(f"Found node with key = 5: {str(val)}")
+    value = tree.find("E")
+    print(f"Found node with key = 'E': {str(value)}")
 
     print(f"Number of nodes: {str(len(tree))}")
     print("Pre-order traversal: ")
