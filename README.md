@@ -16,6 +16,7 @@
 | [Stack](./cpp/Stack/stack.c)                         | 栈           |
 | [Max Heap](./cpp/Heap/MaxHeap/heap.c)               | 最大堆         |
 | [Graph](./cpp/Graph/AdjacencyList/graph.c)           | 图（邻接表）           |
+| [Hashing](./cpp/hashing) | 哈希表 |
 
 | Algorithm                              | Description |
 | -------------------------------------- | ----------- |

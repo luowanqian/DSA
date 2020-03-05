@@ -1,3 +1,9 @@
+/*
+ * Hash Table
+ * 解决冲突方法: Separate Chaining
+ */
+
+
 #include "hash_sep.h"
 #include "hash.h"
 #include <stdio.h>
@@ -22,6 +28,7 @@ struct HashTbl
     unsigned int table_size;
     List* table;
 };
+
 
 int is_prime(unsigned int n)
 {
